@@ -19,19 +19,19 @@ const Data = [
 	},
 	{
 		id: 4,
-		text: "Study React Pre-Class Notes",
+		text: "Work on new File",
 		day: "2023-12-13",
 		isDone: false,
 	},
 	{
 		id: 5,
-		text: "Feed the Dog",
+		text: "Create a new portfolio site",
 		day: "2023-12-09",
 		isDone: true,
 	},
 	{
 		id: 6,
-		text: "Attend In-Class",
+		text: "Do Yoga",
 		day: "2023-12-04",
 		isDone: false,
 	},
