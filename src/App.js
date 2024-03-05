@@ -1,8 +1,12 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
-
-function App() {
-	return <div className="App"></div>;
-}
+import Home from "./pages/Home";
+const App = () => {
+	return (
+		<div className="container">
+			<Home />
+		</div>
+	);
+};
 
 export default App;
