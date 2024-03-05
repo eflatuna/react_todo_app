@@ -11,20 +11,12 @@ const GorevEkle = ({ todos, setTodos }) => {
 		e.preventDefault();
 		const id = Math.ceil(Math.random() * 100) + 6;
 
-		//1.yol kalıcı kaydedilmeyen
-		// setTodos([{id:id,text:texT,day:day,isDone:false},...todos])
-		//2.yol localstoroge nin ilk yolu
 		const newTodos = { id: id, text: texT, day: day, isDone: false };
 		//*     todos = [newTodos, ...todos];
-		//  setTodos(todos);
-		//  localStorage.setItem("gorevler",JSON.stringify(todos))
-
-		// 3.yol (localsoroge a yollamanın 2.yolu)
 
 		localStorage.setItem("gorevler", JSON.stringify([...todos, newTodos]));
 		setTodos(JSON.parse(localStorage.getItem("gorevler")));
 
-		// input alanlarını boşaltmak için, altta inputlara value veriyoruz, burada da temizliyoruz
 		setText("");
 		setDay("");
 	};
@@ -35,7 +27,7 @@ const GorevEkle = ({ todos, setTodos }) => {
 				<img src={todo} alt="" />
 				<button
 					className="btn"
-					style={{ background: display ? "#1E6F9F" : "#5E60CE" }}
+					style={{ background: display ? "#4ea8de" : "#5E60CE" }}
 					onClick={() => setDisplay(!display)}
 				>
 					{display ? "CLOSE" : "SHOW"} ADD TASK BAR

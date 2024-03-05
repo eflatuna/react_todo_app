@@ -2,11 +2,6 @@ import React from "react";
 import { FaTimesCircle } from "react-icons/fa";
 const GorevleriGoster = ({ todos, setTodos }) => {
 	const deleteTodo = (rmv) => {
-		//!1.yol
-		//  todos=todos.filter((i)=>i.id!==rmv)
-		// setTodos(todos)
-		// localStorage.setItem("gorevler",JSON.stringify(todos))
-		//!2.yol
 		localStorage.setItem(
 			"gorevler",
 			JSON.stringify(todos.filter((i) => i.id !== rmv))
@@ -16,11 +11,6 @@ const GorevleriGoster = ({ todos, setTodos }) => {
 	};
 
 	const styleStoroge = (x) => {
-		// todos = todos.map((a) => (a.id === x.id ? { ...a, isDone: !a.isDone } : a));
-		// setTodos(todos)
-		// localStorage.setItem(
-		// "gorevler",todos)
-
 		localStorage.setItem(
 			"gorevler",
 			JSON.stringify(
