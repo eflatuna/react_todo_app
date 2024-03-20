@@ -1,5 +1,5 @@
 
-# Project-003 : Todo App
+# Todo App
 
 ## Description
 
